@@ -1,0 +1,84 @@
+/**
+ * Black theme for reveal.js.
+ *
+ * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+// Include theme-specific fonts
+@import url(https://fonts.googleapis.com/css?family=RobotoDraft:500);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic);
+
+
+// Override theme settings (see ../template/settings.scss)
+$mainColor: #dcdcdc;
+
+$heading1Size: 3em;
+$heading2Size: 2.4em;
+$heading3Size: 1.8em;
+$heading4Size: 1.4em;
+
+$mainFont: 'Open Sans', 'Source Han Sans', sans-serif;
+$linkColor: #e7ad52;
+$linkColorHover: lighten( $linkColor, 20% );
+$headingFont: RobotoDraft, sans-serif;
+$headingTextShadow: none;
+$headingLetterSpacing: -0.03em;
+$headingTextTransform: none;
+$selectionBackgroundColor: #e7ad52;
+$mainFontSize: 30px;
+
+// Background generator
+@mixin bodyBackground() {
+    @include radial-gradient( rgba(28,30,32,1), rgba(85,90,95,1) );
+}
+$backgroundColor: #111;
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+/* brutally override things in theme */
+.reveal {
+    small {
+        vertical-align: middle;
+    }
+
+    .slides>section,
+    .slides>section>section {
+        line-height: 1.45;
+    }
+
+    .slides>section.sparse li,
+    .slides>section>section.sparse li {
+        line-height: 1.7;
+    }
+
+    li img {
+        vertical-align: middle;
+    }
+
+    b, strong {
+        color: #f0f0f0;
+    }
+
+    code {
+        color: #f0f0f0;
+        /* to undo the background on hljs; we've increased the specificity in css involving this QAQ */
+        background-color: rgba(255, 255, 255, 0.2);
+        border-radius: .2em;
+        padding: .1em .2em;
+        font-size: .8em;
+    }
+
+    blockquote code {
+        background-color: transparent;
+    }
+
+}
