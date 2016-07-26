@@ -32,7 +32,7 @@
 
 # HTML
 
-![HTML5](https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg)  <!-- .element: width="300" -->
+![HTML5](https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg)  <!-- .element: width="240" style="padding: 20px" -->
 
 文字和標籤煮成的，[美麗的湯](https://pypi.python.org/pypi/beautifulsoup4)。
 
@@ -91,7 +91,9 @@
 | `hr`  | horizontal rule | 水平分隔線 |
 | `a`   | anchor  | 超連結 |
 | `img` | image   | 圖片 |
-| ...
+| `ul`  | unordered list | 無編號清單 |
+| `ol`  | ordered list | 有編號清單 |
+| `li`  | ordered list | 清單項目 |
 
 ---
 
