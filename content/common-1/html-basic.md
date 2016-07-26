@@ -30,12 +30,15 @@
 
 ------
 
-## HTML
+# HTML
+
+![HTML5](https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg)  <!-- .element: width="300" -->
+
 文字和標籤煮成的，[美麗的湯](https://pypi.python.org/pypi/beautifulsoup4)。
 
 ---
 
-### 註解 (Comment)
+## 註解 (Comment)
 放在原始碼裡面，但解釋的時候會被忽略
 
 註解用來：
@@ -55,7 +58,7 @@
 
 ---
 
-### 標籤 (Tags)
+## 標籤 (Tags)
 
 > <big>`<p> This is a <b>book</b>. </p>`</big>  <!-- .element: style="font-style: normal" -->
 
@@ -67,7 +70,7 @@
 
 ---
 
-#### 標籤分為**起始標籤**和**終止標籤**兩種
+### 標籤分為**起始標籤**和**終止標籤**兩種
 
 > <big>`<p> This is a <b>book</b>. </p>`</big>  <!-- .element: style="font-style: normal" -->
 
@@ -78,7 +81,7 @@
 
 ---
 
-### 一些常見的標籤
+## 一些常見的標籤
 
 | | | |
 | - | - | - |
@@ -92,7 +95,7 @@
 
 ---
 
-### 屬性 (attributes)
+## 屬性 (attributes)
 **屬性**用來指定標籤額外的資訊。
 * 屬性和標籤名稱以空白隔開。
 * 每個屬性的指定方式為**屬性名稱=值**，值要用雙引號包住。
@@ -135,7 +138,7 @@ or DTD，指明這是一個網頁，採用哪個語法標準。
 > <code>&lt;!DOCTYPE <u>html</u>&gt;</code>  <!-- .element: style="font-style: normal" -->
 
 如果沒有這行，
-瀏覽器可能會~~一個HTML各自表述~~，
+瀏覽器可能會[~~一個HTML各自表述~~](https://zh.wikipedia.org/wiki/%E6%80%AA%E5%BC%82%E6%A8%A1%E5%BC%8F)，
 有些時候會發生微妙的差異。
 
 ---
@@ -169,7 +172,7 @@ or DTD，指明這是一個網頁，採用哪個語法標準。
     你沒有辦法「執行」一篇文章<br>&nbsp;
   <!-- .element: class="fragment" data-fragment-index="1" -->
 
-  * HTML **不是**拿來幫網頁加上格式
+  * **不要**拿 HTML 標籤幫網頁加上格式
     套格式請用 CSS，才是觀念正確的作法<br>&nbsp;
   <!-- .element: class="fragment" data-fragment-index="2" -->
 
@@ -177,6 +180,19 @@ or DTD，指明這是一個網頁，採用哪個語法標準。
     `<script></script>` 不能寫成 `<script/>`<br>&nbsp;
   <!-- .element: class="fragment" data-fragment-index="3" -->
 
-  * 我的HTML明明沒照正常標準，網頁卻沒出事
+  * 我的HTML明明沒照正常標準，網頁卻沒出事 (ゝ∀･)b
     瀏覽器有容錯機制，會自動修正常見的錯誤
   <!-- .element: class="fragment" data-fragment-index="4" -->
+
+---
+
+<!-- .slide: class="sparse" -->
+### 課堂練習 (っ●ω●)っ
+
+1. 用「命令提示字元」在桌面建立一個資料夾
+2. 用喜歡的編輯器開一個文字檔，寫入**完整的網頁架構**，
+   存在這個資料夾內，檔名為 `index.html`
+3. 用之前學到的東西寫點簡單的內容 (自由發揮)
+3. `cd` 進這個資料夾，用 Python 啟動一個測試用主機：
+   `python -m http.server 5566`
+4. 在瀏覽器開啟 `http://localhost:5566/`

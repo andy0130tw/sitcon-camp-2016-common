@@ -16,7 +16,7 @@
 * 高中曾經練習過一點點演算法比賽
 * 目前在前端打滾，後端慣用 Node.js
 
-[My GitHub Page](http://github.com/andy0130tw)
+[My GitHub Profile](http://github.com/andy0130tw)
 
 ---
 
@@ -34,12 +34,40 @@
 
 進階的內容會由兩位分流講師帶領大家學習 OwO
 
----
+------
 
 ## 事前作業
 
 1. 如何使用**命令列** (command line)
-2. 挑選一個順手的**文字編輯器** (editor)
+2. 挑選一個順手的**文字編輯器** (text editor)
+
+---
+
+### Command Line
+
+Windows 下的命令列長這樣：
+
+![防火牆很難入侵](http://ppt.cc/wz1P@.jpg)
+(錯誤示範請勿模仿)
+
+---
+
+### 「命令提示字元」
+
+建議開啟「快速編輯模式」，會好用很多。
+
+* `cd`: 切換目錄
+* `mkdir`: 建立目錄
+* `del`: 刪除檔案
+* `cat`: 印出檔案內容
+* `exit`: 離開
+
+---
+
+幸運地(不幸地)，後端的學員們需要學習在 Linux 作業系統下操作命令列，而指令有微妙的差異... 用到的時候再說。
+
+看起來長得像這樣：
+![Hacker typer](content/assets/hacker-typer.png) <!-- .element: width="60%" -->
 
 ---
 
