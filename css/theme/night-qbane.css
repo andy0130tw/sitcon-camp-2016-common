@@ -300,7 +300,8 @@ body {
 
 .reveal .slides > section.sparse li,
 .reveal .slides > section > section.sparse li {
-  line-height: 1.7; }
+  line-height: 1.7;
+  margin-top: 16px; }
 
 .reveal li img {
   vertical-align: middle; }
