@@ -67,6 +67,7 @@
 * 標籤名稱**不區分大小寫**。
 * 一個標籤配對就是一個元素 (element)
   * 元素可以再包含元素，變成樹狀結構
+  * 包在裡面的東西就是標籤的內容
 
 ---
 
@@ -75,8 +76,7 @@
 > <big>`<p> This is a <b>book</b>. </p>`</big>  <!-- .element: style="font-style: normal" -->
 
 * 例如 `<p>` 是起始，則 `</p>` 是終止
-* 有些特殊的標籤不需要包含內容，如 `<br>`
-* 就不需要(也不會)有終止標籤
+* 有些標籤不需要包含內容，如 `<br>`，就**沒有終止標籤**
 * 也可以寫成自我終止 (self-closing) 的形式，如 `<br/>`(不建議)
 
 ---
@@ -84,16 +84,15 @@
 ## 一些常見的標籤
 
 | | | |
-| - | - | - |
-| `br`  | line break | 換行 |
-| `p`   | paragraph | 段落 |
-| `h1`  | header | 標題 (h1 ~ h6) |
-| `hr`  | horizontal rule | 水平分隔線 |
-| `a`   | anchor  | 超連結 |
-| `img` | image   | 圖片 |
+| :---: | -------------- | - |
+| `br`  | line break     | 換行 |
+| `p`   | paragraph      | 段落 |
+| `h1`  | header         | 標題 (h1 ~ h6) |
+| `a`   | anchor         | 超連結 |
+| `img` | image          | 圖片 |
 | `ul`  | unordered list | 無編號清單 |
-| `ol`  | ordered list | 有編號清單 |
-| `li`  | ordered list | 清單項目 |
+| `ol`  | ordered list   | 有編號清單 |
+| `li`  | list item      | 清單項目 |
 
 ---
 
