@@ -3329,7 +3329,12 @@
 					if( indexv > 0 ) url += '/' + indexv;
 				}
 
-				window.location.hash = url;
+				if (history && history.replaceState) {
+					// do not generate history
+					history.replaceState({}, null, '#' + url);
+				} else {
+					window.location.hash = url;
+				}
 			}
 		}
 
