@@ -21,11 +21,11 @@ $mainColor: #dcdcdc;
 
 $heading1Size: 3em;
 $heading2Size: 2.4em;
-$heading3Size: 1.8em;
-$heading4Size: 1.4em;
+$heading3Size: 1.7em;
+$heading4Size: 1.3em;
 
 $mainFont: 'Open Sans', 'Source Han Sans', sans-serif;
-$linkColor: #e7ad52;
+$linkColor: #4fc3f7;
 $linkColorHover: lighten( $linkColor, 20% );
 $headingFont: RobotoDraft, sans-serif;
 $headingTextShadow: none;
@@ -44,27 +44,8 @@ $backgroundColor: #111;
 @import "../template/theme";
 // ---------------------------------------------
 
-/* brutally override things in theme */
-.reveal {
-    small {
-        vertical-align: middle;
-    }
-
-    .slides>section,
-    .slides>section>section {
-        line-height: 1.45;
-    }
-
-    .slides>section.sparse li,
-    .slides>section>section.sparse li {
-        line-height: 1.7;
-        margin-top: 16px;
-    }
-
-    li img {
-        vertical-align: middle;
-    }
-
+/* color related stuffs */
+.reveal {    
     b, strong {
         color: #f0f0f0;
     }
@@ -73,13 +54,9 @@ $backgroundColor: #111;
         color: #f0f0f0;
         /* to undo the background on hljs; we've increased the specificity in css involving this QAQ */
         background-color: rgba(255, 255, 255, 0.2);
-        border-radius: .2em;
-        padding: .1em .2em;
-        font-size: .8em;
     }
-
+    
     blockquote code {
         background-color: transparent;
     }
-
 }

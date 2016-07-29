@@ -1,0 +1,27 @@
+/* brutally override things in theme */
+.reveal {
+    small {
+        vertical-align: middle;
+    }
+
+    .slides>section,
+    .slides>section>section {
+        line-height: 1.45;
+    }
+
+    .slides>section.sparse li,
+    .slides>section>section.sparse li {
+        line-height: 1.7;
+        margin-top: 16px;
+    }
+
+    li img {
+        vertical-align: middle;
+    }
+
+    code {
+        border-radius: .2em;
+        padding: .1em .2em;
+        font-size: .8em;
+    }
+}
