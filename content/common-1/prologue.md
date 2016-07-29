@@ -64,6 +64,14 @@ Windows 下的命令列長這樣：
 
 ---
 
+<!-- .slide: class="sparse" -->
+### Git Bash
+
+* [![](https://git-for-windows.github.io/img/gwindows_logo.png) <!-- .element: width="60" --> Git for Windows](https://git-for-windows.github.io/) 的命令列工具
+* 提供了類似 Linux 的介面和指令
+
+---
+
 幸運地(不幸地)，後端的學員們需要學習在 Linux 作業系統下操作命令列，而指令有微妙的差異... 用到的時候再說。
 
 看起來長得像這樣：
