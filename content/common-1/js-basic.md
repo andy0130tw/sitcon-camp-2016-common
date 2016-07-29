@@ -61,7 +61,7 @@
 * `while` 迴圈
   ```js
   while (條件) {
-     // 區塊內容... 
+     // 區塊內容...
   }
   ```
 
@@ -202,7 +202,7 @@ cat.isCat = true;
 屬性稱為 **key**，用屬性取到的值稱為 **value**
 
 ```
-for (var prop in cat) {     
+for (var prop in cat) {
   consol.log(prop,     cat[prop]);
   //         ^^^^ key  ^^^^^^^^^ value
 }
@@ -225,7 +225,7 @@ JavaScript 裡...
   ```js
   var x = [];
   x.type = 'array';  // 當作 Object 用
-  x.type;            // 'array' 
+  x.type;            // 'array'
   ```
 * 除了初始型別之外，「指定」並不會「複製」一個出來
   ```js
@@ -308,7 +308,7 @@ var multiply = function (a, b) { return a * b; }
 只是你就再也拿不到它了
 
 ```js
-(function (a, b) { return a * b; })(11, 506);  // 5566 
+(function (a, b) { return a * b; })(11, 506);  // 5566
 ```
 
 <small>~~寫成一行好像很厲害~~</small>
@@ -379,7 +379,7 @@ outer: 1
 
 ```js
 var pusheen = {
-  lives: 9,            // <- 物件的「屬性」 (property) 
+  lives: 9,            // <- 物件的「屬性」 (property)
   ddos: function() {   // <- 物件的「方法」 (method)
     alert('I am merely a cat!!');
   },
@@ -403,7 +403,7 @@ var pusheen = {
 ## 陣列的進階運用
 
 ES5 以後，陣列有些新的方法可以用...
-它們接收一個 `function` 做為參數，回傳一個新的陣列 
+它們接收一個 `function` 做為參數，回傳一個新的陣列
 
 這個 `function` 接收 3 個參數：
 1. 陣列裡的值
@@ -417,7 +417,7 @@ ES5 以後，陣列有些新的方法可以用...
 ## `forEach`
 
 依序查詢陣列的每個元素
-跟用 `for` 做很像，但更加直覺好懂 
+跟用 `for` 做很像，但更加直覺好懂
 
 ```js
 [1, 2, 3, 4, 5].forEach(function(val, index, array) {
