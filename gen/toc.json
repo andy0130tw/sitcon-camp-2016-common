@@ -1,0 +1,14 @@
+[
+    {
+        "title": "SITCON Camp 2016 - 共同課程一",
+        "description": "SITCON Camp 2016 共同課程一：HTML、CSS、JS的初探；Git 與 GitHub 的操作",
+        "path": "common-1.html",
+        "slides": [
+            "content/common-1/prologue.md",
+            "content/common-1/html-basic.md",
+            "content/common-1/css-basic.md",
+            "content/common-1/js-basic.md",
+            "content/common-1/git.md"
+        ]
+    }
+]
