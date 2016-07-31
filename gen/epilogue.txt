@@ -19,8 +19,8 @@
               title: 'Chat',
               icon: '<i class="fa fa-comment"></i>',
               content: '<div id="tlkio" data-channel="sitcon-camp-2016" ' +
-                       'data-theme="theme--night" ' + 
-                       'data-custom-css="data:text/css,html{overflow-y:auto}%2523channel{font-size:18px}">' + 
+                       'data-theme="theme--night" ' +
+                       'data-custom-css="{{tlkio-css}}">' +
                        '</div>'
             }
           ]
