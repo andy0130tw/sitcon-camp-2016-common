@@ -1,8 +1,8 @@
 # Git
 
-> <small>"global information tracker": you're in a good mood...
+> <span style="font-size: 28px">"global information tracker": you're in a good mood...
 > "goddamn idiotic truckload of sh*t": when it breaks
-> -- git README</small>
+> -- [git README](https://github.com/git/git)</span>
 
 ---
 
@@ -43,6 +43,25 @@
 
 ---
 
+<div style="display: flex; align-items: center">
+<div>
+
+## 精通 Git 並不輕鬆
+但熟練幾個指令就足以完成日常版控工作
+
+~~真的壞了的話就把 `.git` 刪掉重新 clone 一份乾淨的就好~~
+
+</div>
+
+<div>
+
+![](https://imgs.xkcd.com/comics/git.png)  <!-- .element: style="width: 360px; margin-left: 40px" -->
+
+</div>
+</div>
+
+---
+
 <!-- .slide: class="sparse" -->
 ## 版本控制的階段
 
@@ -60,9 +79,120 @@
 ## Git 的基本操作
 ![](http://www.amygori.com/gdi-rdu-git-github/images/basic-remote-workflow.png)  <!-- .element: width="65%" -->
 
+------
+
+## 安裝 Git
+
+Windows: [![](content/assets/gwindows_logo.png) <!-- .element: width="60" --> Git for Windows](https://git-for-windows.github.io/)
+Non-Windows: 找找版本套件庫，或自己編
+
+Debian/Ubuntu: `apt-get install git`
+
 ---
+
+## 環境設定
+> [以下內容取自 Denny Huang 的 Git 教材](http://denny.one/SITCON-Camp-2015-git/#51)
+
+---
+
+設定身份；僅用來註記個人身份
+**不具登入/身份驗證功能**
+
+```
+# 暱稱
+git config --global user.name "Your Name"
+# Email (建議跟註冊 GitHub 帳號用的相同)
+git config --global user.email "you@example.com"
+```
+
+---
+
+```
+# 設定顏色
+git config --global color.ui true
+# 慣用的編輯器；Windows 下不一定需要
+git config --global core.editor vim
+# 別名 "git lg": 美化版的 log
+git config --global alias.lg "log --color --graph --all \
+--pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset \
+%s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --"
+```
+
+---
+
+## `git init`
+
+~~展開 git 力場~~
+
+initialize
+讓一個資料夾變成 git repo
+
+---
+
+## `git add`
+把檔案加到 staging area
+
+## `git reset`
+把檔案從 staging area 退回來
+
+---
+
+## `git commit`
+把 staging area 的東西編進版本紀錄
+接著會跳出編輯器，要你寫 commit message
+
+通常是簡介這次做了哪些事，以及為什麼做
+
+也可以直接指定，方便省事：
+`git commit -m <commit message>`
+
+---
+
+Windows 預設的編輯器是記事本
+Non-Windows 可能是 vim 或 nano
+
+不允許空白喔 (•ㅂ•)/
+但也不要偷懶亂寫，你的伙伴會崩潰
+
+[Commit Logs from Last Night](http://www.commitlogsfromlastnight.com/)
+(警告：可能包含粗俗文字)
+
+---
+
+## `git push <remote_name>`
+把本地端的歷史紀錄上傳到遠端
+這時會要你輸入帳號與密碼
+(也可以用 SSH key 驗證，這裡略過)
+
+如果還沒有設定遠端的 repo，可以用以下語法：
+`git remote add <remote_name> <repo_url>`
+
+一般預設的 `remote_name` 叫作 `origin`
+
+---
+
+## 練習
+
+1. 把剛才寫的網頁放進一個資料夾裡 (`mv`)
+2. 在這個目錄下初始化一個 git repo
+3. 建立一個新的 commit 來紀錄這次變動，
+   commit message 自由發揮
+
+------
 
 <!-- .slide: class="sparse" -->
 ## GitHub 又是什麼
 #### Git 是一個**程式**
 #### GitHub 是一個提供 remote git repo 的**服務**
+
+---
+
+## `git clone <repo_name>`
+將遠端 repo 的內容複製到本地端
+~~超實用的下載器~~
+會自動把 remote 加到 repo 的資訊且設定好追蹤關係
+
+練習：
+將以下的 repo clone 到本地端的一個資料夾：(待補)
+
+---

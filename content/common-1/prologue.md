@@ -48,7 +48,7 @@
 
 Windows 下的命令列長這樣：
 
-![防火牆很難入侵](http://ppt.cc/wz1P@.jpg)
+![防火牆很難入侵](content/assets/ping-cmd.jpg)
 (錯誤示範請勿模仿)
 
 ---
@@ -68,7 +68,7 @@ Windows 下的命令列長這樣：
 <!-- .slide: class="sparse" -->
 ### Git Bash
 
-* [![](https://git-for-windows.github.io/img/gwindows_logo.png) <!-- .element: width="60" --> Git for Windows](https://git-for-windows.github.io/) 的命令列工具
+* [![](content/assets/gwindows_logo.png) <!-- .element: width="60" --> Git for Windows](https://git-for-windows.github.io/) 的命令列工具
 * 提供了類似 Linux 的介面和指令
 
 ---
@@ -84,9 +84,9 @@ Windows 下的命令列長這樣：
 
 幾個功能比較完整的編輯器，如果平常沒有寫網頁的習慣可以試試：
 
-1. [![](https://upload.wikimedia.org/wikipedia/en/4/4c/Sublime_Text_Logo.png)<!-- .element: width="80" --> Sublime Text](https://www.sublimetext.com/)
-2. [![](https://avatars2.githubusercontent.com/u/1089146?v=3&s=80)<!-- .element: width="80" --> Atom](https://atom.io/)
-3. [![](https://upload.wikimedia.org/wikipedia/commons/f/f3/Visual_Studio_Code_0.10.1_icon.png)<!-- .element: width="80" --> Visual Studio Code](http://code.visualstudio.com/)
-4. [![](https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Brackets_Icon.svg/64px-Brackets_Icon.svg.png)<!-- .element: width="80" --> Brackets](http://brackets.io/)
+1. [![](content/assets/sublime-text.png)<!-- .element: width="80" --> Sublime Text](https://www.sublimetext.com/)
+2. [![](content/assets/atom.png)<!-- .element: width="80" --> Atom](https://atom.io/)
+3. [![](content/assets/vscode.png)<!-- .element: width="80" --> Visual Studio Code](http://code.visualstudio.com/)
+4. [![](content/assets/brackets.png)<!-- .element: width="80" --> Brackets](http://brackets.io/)
 
 <small>(依講師私人喜好排序)</small>

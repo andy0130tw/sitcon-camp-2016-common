@@ -1,11 +1,11 @@
 # CSS
-![CSS3](https://upload.wikimedia.org/wikipedia/commons/a/ad/Html5_css3_styling.svg)  <!-- .element: width="200" style="background-color: rgba(255,255,255,.4); padding: 20px" -->
+![CSS3](content/assets/css3.svg)  <!-- .element: width="200" style="background-color: rgba(255,255,255,.4); padding: 20px" -->
 
 ---
 
 ### 「人家...人家才不是什麼百葉窗呢！」
 
-![](https://i.imgur.com/Q3cUg29.gif)
+![](content/assets/css-mess.gif)
 
 ---
 

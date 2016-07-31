@@ -1,6 +1,6 @@
 # JavaScript
 
-![JS logo](https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/480px-Unofficial_JavaScript_logo_2.svg.png) <!-- .element: width="200" -->
+![JS logo](content/assets/javascript.png) <!-- .element: width="200" -->
 
 本來只是十天發明出來的語言，
 如今卻有改變世界的潛力。
@@ -105,7 +105,7 @@ var matrix  = [[0, 1], [1, 0]];
 也可以從 `Array` 類別直接建立。
 
 ```js
-var nothing = new Array(3);      // [undefined] * 3
+var nothing = new Array(3);      // [undefined * 3]
 var twoElem = new Array(3, 4);   // [3, 4]
 ```
 
@@ -227,6 +227,25 @@ JavaScript 裡...
   x.type = 'array';  // 當作 Object 用
   x.type;            // 'array'
   ```
+
+初始型別的值也有屬性和方法
+會被先包成一個物件再呼叫
+
+```js
+'hello'.length;  // 5
+// 想成 String('hello').length
+(42).toString();  // '42'
+// 想成 Number(42).toString()
+```
+
+---
+
+* 即使內容一樣，不一樣的物件就是不一樣的
+  ```js
+  '123' == '123';  // true
+  [1, 2, 3] == [1, 2, 3];  // false
+  ```
+
 * 除了初始型別之外，「指定」並不會「複製」一個出來
   ```js
   var x = [1, 2, 3];
@@ -273,6 +292,22 @@ multiply();      // NaN (a = undefined, b = undefined)
 
 ---
 
+可以檢查參數，並給預設值
+
+```js
+function multiply(a, b) {
+  if (a == undefined) a = 0;
+  if (b == undefined) b = 0;
+  return a * b;
+}
+
+multiply(2, 3);  // 6
+multiply(2);     // 0
+multiply();      // 0
+```
+
+---
+
 執行到 `return` 之後函數就會收工
 
 ```js
@@ -283,13 +318,19 @@ function alwaysReturnTrue() {
 ```
 
 什麼都不回傳，執行結束之後會回傳 `undefined`
+`return` 後面不指定回傳值，也會回傳 `undefined`
 
 ```js
 function doNothing() {
   // nothing here at all
 }
 
-var nothing = doNothing();  // undefined
+function returnNothing() {
+  return;  // as if returned undefined
+}
+
+var nothingOwO = doNothing();      // undefined
+var nothingOwQ = returnNothing();  // undefined
 ```
 
 ---
@@ -331,6 +372,17 @@ var multiply = function (a, b) { return a * b; }
 
 x;  // Error!! x is not defined.
 y;  // 2 (why?)
+```
+
+---
+
+在瀏覽器裡全域變數可以在 `window` 下存取
+
+```js
+(function () {
+  a == b;  // false
+  window.a == a;  // true
+})();
 ```
 
 ---
@@ -398,71 +450,11 @@ var pusheen = {
 
 ## 練習 ヽ(・×・´)ゞ
 
-------
-
-## 陣列的進階運用
-
-ES5 以後，陣列有些新的方法可以用...
-它們接收一個 `function` 做為參數，回傳一個新的陣列
-
-這個 `function` 接收 3 個參數：
-1. 陣列裡的值
-2. 這個值屬於哪個索引
-3. 本來的這個陣列
-
-註：IE 可能不太適應這些新的東西，請小心 :3
-
 ---
 
-## `forEach`
+<!-- .slide: class="sparse" -->
+# 預告 -- 更多的 JS
 
-依序查詢陣列的每個元素
-跟用 `for` 做很像，但更加直覺好懂
-
-```js
-[1, 2, 3, 4, 5].forEach(function(val, index, array) {
-  if (val % 2 == 0) {
-    console.log(val + ' is even');
-  } else {
-    console.log(val + ' is odd');
-  }
-});  // 回傳原來的陣列
-
-/*
-1 is odd
-2 is even
-3 is odd
-4 is even
-5 is odd
-*/
-```
-
----
-
-## `map`
-
-每個元素用一個新的元素來代表它
-這些回傳值會被收集成新的陣列
-
-```js
-[1, 2, 3, 4, 5].map(function(val, index, array) {
-  return val * val;
-});  // 回傳 [1, 4, 9, 16, 25]
-```
-
----
-
-## `filter`
-
-依序查詢陣列的每個元素，用回傳值來篩選
-`true` 表示留著、`false` 表示丟掉
-
-```js
-[1, 2, 3, 4, 5].map(function(val, index, array) {
-  return (val % 2 == 0);
-});  // 回傳 [2, 4]
-```
-
----
-
-## 練習 ｡:.ﾟヽ(*´∀`)ﾉﾟ.:｡
+* 共同：JavaScript 的進階運用
+* 前端分流：jQuery
+* 後端分流：Node.js
