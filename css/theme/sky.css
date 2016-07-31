@@ -295,6 +295,9 @@ body {
 
 /* be brutal!! */
 /* brutally override things in theme */
+.reveal ul {
+  min-width: 60%; }
+
 .reveal small {
   vertical-align: middle; }
 

@@ -1,5 +1,9 @@
 /* brutally override things in theme */
 .reveal {
+    ul {
+        min-width: 60%;
+    }
+
     small {
         vertical-align: middle;
     }
