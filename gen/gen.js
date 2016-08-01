@@ -5,8 +5,8 @@ var minify = require('html-minifier').minify;
 
 var toc = require('./toc');
 
-var prologueTemplate = fs.readFileSync('./prologue.txt', 'utf-8');
-var epilogueTemplate = fs.readFileSync('./epilogue.txt', 'utf-8');
+var templateBase = fs.readFileSync('./template.html', 'utf-8');
+
 
 var TLKIO_CSS_DATA_URI = 'data:text/css,' +
   escape(escape(
@@ -28,11 +28,6 @@ toc.forEach(function(tocEntry) {
   if (!tocEntry.slides)
     throw new Error('Missing slides: ' + JSON.stringify(tocEntry));
 
-  var prologue = prologueTemplate
-    .replace('{{title}}', tocEntry.title || '')
-    .replace('{{description}}', tocEntry.description || '')
-    .replace('{{author}}', tocEntry.author || 'Kuang-Lin Pan');
-
   var slides = tocEntry.slides.map(function(path) {
       return '<section\
           data-markdown="' + path + '"\
@@ -41,11 +36,15 @@ toc.forEach(function(tocEntry) {
         </section>';
   }).join('');
 
-  var epilogue = epilogueTemplate
-    .replace('{{tlkio-css}}', TLKIO_CSS_DATA_URI);
+  var content = templateBase
+    .replace('{{title}}',         tocEntry.title       || '')
+    .replace('{{description}}',   tocEntry.description || '')
+    .replace('{{author}}',        tocEntry.author      || 'Kuang-Lin Pan')
+    .replace('{{tlkio-css}}',     TLKIO_CSS_DATA_URI)
+    .replace('{{slide-content}}', slides);
 
   // always add \n to the end of the file
-  var minified = minify(prologue + slides + epilogue, {
+  var minified = minify(content, {
       collapseWhitespace: true,
       minifyJS: true
   }) + '\n';

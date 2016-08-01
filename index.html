@@ -1,1 +1,108 @@
-<!doctype html><html><head><meta charset="utf-8"><title>SITCON Camp 2016 - 共同課程一</title><meta name="description" content="SITCON Camp 2016 共同課程一：HTML、CSS、JS的初探；Git 與 GitHub 的操作"><meta name="author" content="Kuang-Lin Pan"><meta name="theme-color" content="#000000"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><link rel="stylesheet" href="css/reveal.css"><link rel="stylesheet" href="lib/css/tlkio.css"><link rel="stylesheet" href="css/theme/night-qbane.css" id="theme"><!-- Theme used for syntax highlighting of code --><link rel="stylesheet" href="lib/css/tomorrow-night.css"><!-- Printing and PDF exports --><script>var link=document.createElement("link");link.rel="stylesheet",link.type="text/css",link.href=window.location.search.match(/print-pdf/gi)?"css/print/pdf.css":"css/print/paper.css",document.getElementsByTagName("head")[0].appendChild(link)</script></head><body><div class="reveal"><div class="slides"><section data-markdown="content/common-1/prologue.md" data-separator="^\n-{6,}\n$" data-separator-vertical="^\n---\n$"></section><section data-markdown="content/common-1/html-basic.md" data-separator="^\n-{6,}\n$" data-separator-vertical="^\n---\n$"></section><section data-markdown="content/common-1/css-basic.md" data-separator="^\n-{6,}\n$" data-separator-vertical="^\n---\n$"></section><section data-markdown="content/common-1/js-basic.md" data-separator="^\n-{6,}\n$" data-separator-vertical="^\n---\n$"></section><section data-markdown="content/common-1/git.md" data-separator="^\n-{6,}\n$" data-separator-vertical="^\n---\n$"></section><script src="lib/js/head.min.js"></script><script src="js/reveal.js"></script><script src="https://tlk.io/embed.js" async></script><script>Reveal.initialize({history:!0,transition:"slide",transitionSpeed:"fast",slideNumber:!0,menu:{hideMissingTitles:!0,custom:[{title:"Chat",icon:'<i class="fa fa-comment"></i>',content:'<div id="tlkio" data-channel="sitcon-camp-2016" data-theme="theme--night" data-custom-css="data:text/css,html{overflow-y:auto}%2523channel{font-size:18px}.theme--day{background-color:%2523f4f3f1!important}.theme--pop{background-color:%2523f9eced!important}.theme--minimal{background-color:white!important}.theme--night{background-color:%252326282c!important}"></div>'}]},dependencies:[{src:"plugin/markdown/markdown-it.js"},{src:"plugin/markdown/markdown.js"},{src:"plugin/highlight/highlight.js",async:!0,callback:function(){hljs.initHighlightingOnLoad()}},{src:"plugin/zoom-js/zoom.js",async:!0},{src:"plugin/notes/notes.js",async:!0},{src:"plugin/menu/menu.js",async:!0}]})</script></div></div></body></html>
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>SITCON Camp 2016 - 共同課程</title>
+        <meta name="description" content="SITCON Camp 2016 共同課程">
+        <meta name="author" content="Kuang-Lin Pan">
+
+        <meta name="theme-color" content="#000000">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+        <link rel="stylesheet" href="lib/css/tlkio.css">
+
+        <style>
+            body {
+                background-color: #fafafa;
+                margin: 2em 0;
+                color: #222;
+            }
+
+            .container {
+                max-width: 720px;
+                margin: auto;
+            }
+
+            a {
+                color: inherit;
+                text-decoration: none;
+                text-shadow: 2px 2px 3px transparent;
+                transition: text-shadow 300ms ease-out;
+            }
+
+            a:hover {
+                text-shadow: 2px 2px 3px rgba(0, 0, 0, .4);
+            }
+
+            #slide-list {
+                font-size: 1.6rem;
+                padding: 1.2em 0 2.4em;
+            }
+
+            #slide-list > li {
+                display: table-cell;
+                width: 1%;
+                text-align: center;
+            }
+
+            h1 {
+                color: #666;
+                font-size: 2.4rem;
+                letter-spacing: .08em;
+                font-weight: 300;
+                text-align: center;
+                text-shadow: 1px 1px 2px #ccc;
+            }
+
+            h2 {
+                color: #444;
+                margin: 1.6em 0 .8em;
+                font-size: 1.8rem;
+                letter-spacing: .06em;
+                font-weight: 300;
+            }
+
+            #tlkioWrapper {
+                position: relative;
+                height: 80vh;
+                box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+            }
+
+            @media screen and (max-width: 992px) {
+                .container {
+                    max-width: 800px;
+                }
+            }
+
+        </style>
+    </head>
+
+    <body>
+
+        <div class="container">
+            <h1>SITCON Camp 2016 共同課程</h1>
+            <ul id="slide-list">
+                <li><a href="common-1.html">共同課程一</a></li>
+                <li><a href="common-2.html">共同課程二</a></li>
+                <li><a href="common-3.html">共同課程三</a></li>
+            </ul>
+
+            <h2>Chat</h2>
+            <div id="tlkioWrapper">
+                <div id="tlkio" data-channel="sitcon-camp-2016" data-theme="theme--minimal" data-custom-css="data:text/css,html{overflow-y:auto}%2523channel{font-size:18px}.theme--day{background-color:%2523f4f3f1!important}.theme--pop{background-color:%2523f9eced!important}.theme--minimal{background-color:white!important}.theme--night{background-color:%252326282c!important}"></div>
+            </div>
+
+            <h2>Author</h2>
+            WIP
+            <h2>License</h2>
+            WIP
+        </div>
+
+
+        <script src="https://tlk.io/embed.js" async></script>
+
+        <script>
+
+        </script>
+
+    </body>
+</html>
