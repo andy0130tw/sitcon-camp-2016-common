@@ -1,5 +1,7 @@
 # Git
 
+講師：松鼠 [@squirrel](https://github.com/azdkj532)
+
 > <span style="font-size: 28px">"global information tracker": you're in a good mood...
 > "goddamn idiotic truckload of sh*t": when it breaks
 > -- [git README](https://github.com/git/git)</span>
@@ -275,7 +277,7 @@ diff 格式：
 
 ---
 
-## 練習 ヽ(●´ε｀●)ノ
+## 思考時間(?) ヽ(●´ε｀●)ノ
 
 1. 編輯 `fbsdk.html` 這個檔案並存檔
 2. 這個時候 `git diff` 和 `git diff --cached`，哪一個會呈現出差異？
@@ -293,6 +295,19 @@ diff 格式：
 * [人生不能重來，但 Git 可以](https://speakerdeck.com/eddie/use-git-to-control-your-life)，高見龍 2016/7
 
 偷偷說，我也是去年夏令營的學員 owo
+
+---
+
+其實，還有別的選擇...
+
+## Git GUI
+圖形介面的
+
+[SourceTree](https://www.sourcetreeapp.com/) (for Windows & Mac)
+[GitHub Desktop](https://desktop.github.com/) (GitHub; for Windows & Mac)
+Git GUI (Git for Windows)
+Gitg (Gnome; for Linux): `apt-get install gitg`
+[GitKarken](https://www.gitkraken.com/) (for Windows & Mac & Linux)
 
 ---
 

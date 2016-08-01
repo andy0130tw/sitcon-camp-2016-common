@@ -19,7 +19,7 @@ body {
   background-color: #111; }
 
 .reveal {
-  font-family: "Open Sans", "Source Han Sans", sans-serif;
+  font-family: "Open Sans", "Source Han Sans", "Microsoft JhengHei", sans-serif;
   font-size: 30px;
   font-weight: normal;
   color: #dcdcdc; }
@@ -45,7 +45,7 @@ body {
 .reveal h6 {
   margin: 0 0 20px 0;
   color: #f0f0f0;
-  font-family: RobotoDraft, sans-serif;
+  font-family: RobotoDraft, "Microsoft JhengHei", sans-serif;
   font-weight: normal;
   line-height: 1.2;
   letter-spacing: -0.03em;
@@ -149,13 +149,13 @@ body {
   margin: 20px auto;
   text-align: left;
   font-size: .85em;
-  font-family: "Monaco", Inconsolata, Hack, Consolas, monospace;
+  font-family: "Source Sans Pro", Inconsolata, Hack, Consolas, monospace;
   line-height: 1.2em;
   word-wrap: break-word;
   box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3); }
 
 .reveal code {
-  font-family: "Monaco", Inconsolata, Hack, Consolas, monospace; }
+  font-family: "Source Sans Pro", Inconsolata, Hack, Consolas, monospace; }
 
 .reveal pre code {
   display: block;
@@ -314,6 +314,9 @@ body {
   border-radius: .2em;
   padding: .1em .2em;
   font-size: .8em; }
+
+.reveal pre code {
+  padding: .7em .6em; }
 
 /* color related stuffs */
 .reveal b, .reveal strong {
