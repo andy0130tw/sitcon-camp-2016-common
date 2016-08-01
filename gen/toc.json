@@ -20,5 +20,15 @@
             "content/common-2/js-advanced.md",
             "content/common-2/restful.md"
         ]
+    },
+    {
+        "title": "SITCON Camp 2016 - 共同課程三",
+        "description": "SITCON Camp 2016 共同課程三：Git 進階與 GitHub Pages；複習與交流",
+        "path": "common-3.html",
+        "slides": [
+            "content/common-3/prologue.md",
+            "content/common-3/js-advanced.md",
+            "content/common-3/epilogue.md"
+        ]
     }
 ]
