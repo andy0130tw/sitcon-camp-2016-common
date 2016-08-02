@@ -61,25 +61,6 @@
 
 ---
 
-* `switch`
-  ```js
-  var x = 42;
-  switch (x) {
-    case 1:
-      // x == 1 時執行
-      break;
-    case 100:
-      // x == 100 時執行
-      break;
-    default:
-      // 所有條件都不成立時執行
-  }
-  ```
-
-**條件之間需要用 `break` 分開**
-
----
-
 * `for` 迴圈
   ```js
   for (初始值; 條件; 遞增值) {
@@ -245,46 +226,6 @@ for (var prop in cat) {
 
 ## 練習 ε٩(๑> ₃ <)۶з
 
----
-
-## "Call by Sharing"
-
-JavaScript 裡...
-
-* 除了初始型別之外的值都是物件
-  ```js
-  var x = [];
-  x.type = 'array';  // 當作 Object 用
-  x.type;            // 'array'
-  ```
-
-初始型別的值也有屬性和方法
-會被先包成一個物件再呼叫
-
-```js
-'hello'.length;  // 5
-// 想成 String('hello').length
-(42).toString();  // '42'
-// 想成 Number(42).toString()
-```
-
----
-
-* 即使內容一樣，不一樣的物件就是不一樣的
-  ```js
-  '123' == '123';  // true
-  [1, 2, 3] == [1, 2, 3];  // false
-  ```
-
-* 除了初始型別之外，「指定」並不會「複製」一個出來
-  ```js
-  var x = [1, 2, 3];
-  var y = x;
-  y.push(4);
-  x;  // [1, 2, 3] or [1, 2, 3, 4]?
-  ```
-  如果要複製應該怎麼寫？
-
 ------
 
 ## 函數 (Function)
@@ -295,45 +236,14 @@ JavaScript 裡...
 * 輸入：**參數 (arguments)**
 * 輸出：**回傳值 (return value)**
 
+宣告方式
+
 ```js
 function square(num) {
   return num * num;
 }
-```
 
----
-
-### 呼叫
-
-函數名稱加個**括號 ()**，丟參數進去，就可以呼叫它
-
-多丟的參數會被忽略
-少丟的參數會被當作 `undefined`
-
-```js
-function multiply(a, b) {
-  return a * b;
-}
-
-multiply(2, 3);  // 6   (a = 2,         b = 3)
-multiply(2);     // NaN (a = 2,         b = undefined)
-multiply();      // NaN (a = undefined, b = undefined)
-```
-
----
-
-可以檢查參數，並給預設值
-
-```js
-function multiply(a, b) {
-  if (a == undefined) a = 0;
-  if (b == undefined) b = 0;
-  return a * b;
-}
-
-multiply(2, 3);  // 6
-multiply(2);     // 0
-multiply();      // 0
+var multiply = function (a, b) { return a * b; }
 ```
 
 ---
@@ -371,21 +281,6 @@ var nothingOwQ = returnNothing();  // undefined
 
 這種函數可以不命名
 
-```js
-var multiply = function (a, b) { return a * b; }
-```
-
-建立函數完直接執行也是可以的！
-只是你就再也拿不到它了
-
-```js
-(function (a, b) { return a * b; })(11, 506);  // 5566
-```
-
-<small>~~寫成一行好像很厲害~~</small>
-
----
-
 ### 作用域 (scope)
 
 變數有作用範圍，超過這個範圍就「看不到」了
@@ -395,10 +290,12 @@ var multiply = function (a, b) { return a * b; }
 在 JavaScript 中，未宣告的變數是全域的
 
 ```js
-(function() {
+function demo() {
   var x = 1;
   y = 2;
-})();  // 立刻執行它
+}
+
+demo();
 
 x;  // Error!! x is not defined.
 y;  // 2 (why?)
@@ -406,28 +303,19 @@ y;  // 2 (why?)
 
 ---
 
-在瀏覽器裡全域變數可以在 `window` 下存取
-
-```js
-(function () {
-  a == b;  // false
-  window.a == a;  // true
-})();
-```
-
----
-
 裡面的可以看到外面的...
 
 ```js
-(function() {
+function func1() {
   var x = 1;
-  (function() {
+  function func2() {
     var y = 2;
     console.log('inner: ' + x);
-  })();  // 在裡面再塞一層！
+  }
+  func2();
   console.log('outer: ' + y);  // Error!!
-})();
+}
+func1();
 
 /*
 inner: 1
@@ -440,40 +328,21 @@ Error!! y is not defined.
 裡面的可以**遮蔽**外面的...
 
 ```js
-(function() {
+function func1() {
   var x = 1;
-  (function() {
+  function func2() {
     var x = 2;
     console.log('inner: ' + x);
-  })();  // 在裡面再塞一層！
+  }
+  func2();
   console.log('outer: ' + x);
-})();
+}
+func1();
 
 /*
 inner: 2
 outer: 1
 */
-```
-
----
-
-### 物件導向 (?
-
-```js
-var pusheen = {
-  lives: 9,            // <- 物件的「屬性」 (property)
-  ddos: function() {   // <- 物件的「方法」 (method)
-    alert('I am merely a cat!!');
-  },
-  die: function() {
-    if (pusheen.lives > 0) {
-      pusheen.lives--;
-      alert('I still have ' + pusheen.lives + ' live(s).');
-    } else {
-      alert('I am already dead. X_X');
-    }
-  }
-};
 ```
 
 ---
