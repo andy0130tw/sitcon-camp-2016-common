@@ -91,17 +91,15 @@
 
 ---
 
-## 一些常見的標籤 (段落)
+## 一些常見的標籤 (區塊)
 
 | | | |
-| :---: | -------------- | - |
-| `p`   | paragraph      | 段落 |
-| `h1`  | header         | 標題 (h1 ~ h6) |
-| `a`   | anchor         | 超連結 |
-| `img` | image          | 圖片 |
-| `ul`  | unordered list | 無編號清單 |
-| `ol`  | ordered list   | 有編號清單 |
-| `li`  | list item      | 清單項目 |
+| :--: | -------------- | - |
+| `p`  | paragraph      | 段落 |
+| `h1` | header         | 標題 (h1 ~ h6) |
+| `ul` | unordered list | 無編號清單 |
+| `ol` | ordered list   | 有編號清單 |
+| `li` | list item      | 清單項目 |
 
 ---
 
@@ -109,6 +107,8 @@
 
 | | | |
 | :------: | ---------- | - |
+| `a`      | anchor     | 超連結 |
+| `img`    | image      | 圖片 |
 | `br`     | line break | 換行 |
 | `strong` | (強調)     | 通常顯示為**粗體** |
 | `em`     | (強調)     | 通常顯示為*斜體* |
