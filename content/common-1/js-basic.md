@@ -233,8 +233,8 @@ cat.isCat = true;
 
 ```
 for (var prop in cat) {
-  consol.log(prop,     cat[prop]);
-  //         ^^^^ key  ^^^^^^^^^ value
+  console.log(prop,     cat[prop]);
+  //          ^^^^ key  ^^^^^^^^^ value
 }
 ```
 
