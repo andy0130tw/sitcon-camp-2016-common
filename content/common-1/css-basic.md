@@ -44,27 +44,13 @@
 
 ---
 
-### 練習 (\,\,・ω・\,\,)
+### 範例
 
-```html
-<h1 id="app-title">Todo List</h1>
-<ul>
-  <li><strong>[v]</strong> Learn CSS</li>
-  <li><strong>[v]</strong> Write some rules</li>
-  <li>[ ] Read what you have done</li>
-  <li class="cry">[ ] Only speghetti code
-    <ul>
-      <li class="cry"><strong>[v]</strong> And no one loves you</li>
-      <li><strong>[v]</strong> Hide yourself under the table</li>
-    </ul>
-  </li>
-</ul>
-```
+#### [@ CodePen](http://codepen.io/andy0130tw/pen/qNrkYx)
 
-有哪些方式可以選到：
-  * Todo list 的標題
-  * 第一層清單裡的所有項目
-  * 第二層清單裡有 `cry` 這個 class 裡面的 `<strong>`
+~~有點傷眼~~但請玩玩看 CSS 的部份！
+
+(破壞式學習法)
 
 ---
 

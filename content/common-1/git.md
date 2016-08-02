@@ -1,6 +1,7 @@
 # Git
 
 講師：松鼠 [@squirrel](https://github.com/azdkj532)
+<small>但投影片是 @qbane 做的QQ</small>
 
 > <span style="font-size: 28px">"global information tracker": you're in a good mood...
 > "goddamn idiotic truckload of sh*t": when it breaks
@@ -286,22 +287,19 @@ diff 格式：
 
 ---
 
-## 謝辭
-這份投影片的完成有賴以下資源的協助，
-我也是藉著大量的參考資料體會 git 之妙。
+## 參考資料
+這份投影片的完成有賴以下資源的協助
 
 * [穿越時空的版本控制](https://speakerdeck.com/rschiang/chuan-yue-shi-kong-de-ban-ben-kong-zhi-git)，2014/10/31 @ 臺大開源社
 * [Denny Huang 的 Git 教材](http://denny.one/SITCON-Camp-2015-git/)，SITCON Camp 2015
 * [人生不能重來，但 Git 可以](https://speakerdeck.com/eddie/use-git-to-control-your-life)，高見龍 2016/7
-
-偷偷說，我也是去年夏令營的學員 owo
 
 ---
 
 其實，還有別的選擇...
 
 ## Git GUI
-圖形介面的
+圖形介面的 Git，簡化繁瑣的命令列操作
 
 [SourceTree](https://www.sourcetreeapp.com/) (for Windows & Mac)
 [GitHub Desktop](https://desktop.github.com/) (GitHub; for Windows & Mac)
