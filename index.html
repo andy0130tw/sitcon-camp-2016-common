@@ -29,6 +29,11 @@
                 transition: text-shadow 300ms ease-out;
             }
 
+            a.disabled {
+                opacity: .2;
+                touch-action: none;
+            }
+
             a:hover {
                 text-shadow: 2px 2px 3px rgba(0, 0, 0, .4);
             }
@@ -82,8 +87,8 @@
             <h1>SITCON Camp 2016 共同課程</h1>
             <ul id="slide-list">
                 <li><a href="common-1.html">共同課程一</a></li>
-                <li><a href="common-2.html">共同課程二</a></li>
-                <li><a href="common-3.html">共同課程三</a></li>
+                <li><a href="#" class="disabled">共同課程二</a></li>
+                <li><a href="#" class="disabled">共同課程三</a></li>
             </ul>
 
             <h2>Chat</h2>

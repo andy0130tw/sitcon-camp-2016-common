@@ -18,7 +18,8 @@
         "slides": [
             "content/common-2/prologue.md",
             "content/common-2/js-advanced.md",
-            "content/common-2/restful.md"
+            "content/common-2/restful.md",
+            "content/common-2/network-basic.md"
         ]
     },
     {
