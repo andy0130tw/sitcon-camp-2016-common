@@ -219,7 +219,7 @@ or DTD，指明這是一個網頁，採用哪個語法標準。
 ### 課堂練習 (っ●ω●)っ
 
 1. 用文字介面切換目前的目錄到桌面 (`cd`)，並建立一個資料夾
-   (桌面的資料夾是 `C:\Users\<User>\Desktop`)
+   (桌面的資料夾是 `~/Desktop`)
 2. 用喜歡的編輯器寫入[**完整的網頁架構(這裡可以複製)**](content/material/boilerplate.html)，
    存在這個資料夾內，檔名為 `index.html`
 3. 把[這段素材](content/material/meow-meow.txt)貼進 `<body>` 裡，試著仿造這個頁面本來的樣子。
