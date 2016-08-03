@@ -275,12 +275,6 @@ var nothingOwQ = returnNothing();  // undefined
 
 ---
 
-### 匿名函數 (Anonymous Function)
-
-函數也可以被指定給變數！
-
-這種函數可以不命名
-
 ### 作用域 (scope)
 
 變數有作用範圍，超過這個範圍就「看不到」了
