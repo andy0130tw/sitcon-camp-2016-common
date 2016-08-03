@@ -1,0 +1,78 @@
+body {
+    background-color: #fafafa;
+    margin: 2em 0;
+    color: #222;
+}
+
+.container {
+    max-width: 720px;
+    margin: auto;
+}
+
+a {
+    color: #2196f3;
+    text-decoration: none;
+    text-shadow: 2px 2px 3px transparent;
+    transition: text-shadow 300ms ease-out;
+}
+
+a.disabled {
+    opacity: .2;
+    touch-action: none;
+}
+
+#slide-list {
+    font-size: 1.6rem;
+    padding: 0 1.2em;
+    margin: 0;
+}
+
+#slide-list > li {
+    display: table-cell;
+    width: 1%;
+    text-align: center;
+}
+
+#slide-list > li > a {
+    color: inherit;
+    transition: background-color 300ms ease-out;
+    line-height: 2;
+    padding: .2em .6em;
+}
+
+#slide-list > li > a:hover {
+    background: rgba(0, 0, 0, .2);
+    text-shadow: 0 0 2px rgba(255, 255, 255, .9),
+                 0 0 3px rgba(255, 255, 255, .7),
+                 0 0 4px rgba(255, 255, 255, .6);
+}
+
+h1 {
+    color: #666;
+    font-size: 2.4rem;
+    margin: 2.4em 0 .6em;
+    letter-spacing: .08em;
+    font-weight: 300;
+    text-align: center;
+    text-shadow: 1px 1px 2px #ccc;
+}
+
+h2 {
+    color: #444;
+    margin: 1.6em 0 .4em;
+    font-size: 1.8rem;
+    letter-spacing: .06em;
+    font-weight: 300;
+}
+
+#tlkioWrapper {
+    position: relative;
+    height: 80vh;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+@media screen and (max-width: 992px) {
+    .container {
+        max-width: 800px;
+    }
+}

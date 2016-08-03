@@ -26,7 +26,7 @@
         "path": "common-3.html",
         "slides": [
             "content/common-3/prologue.md",
-            "content/common-3/js-advanced.md",
+            "content/common-3/git-advanced.md",
             "content/common-3/epilogue.md"
         ]
     }
