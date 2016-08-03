@@ -3,11 +3,13 @@
 > Git 進階操作
 > GitHub Pages
 
-2016/8/3 @qbane
+2016/8/4 @qbane
 
 ---
 
 <!-- .slide: style="text-align: left;" -->
+## 大綱
+
 ### 進階 Git
 
 * Git 基本操作複習
@@ -20,7 +22,7 @@
 * `README.md`
 * `gh-pages` branch
 
----
+------
 
 ## Git 快速複習
 
