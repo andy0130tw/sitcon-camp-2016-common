@@ -1,5 +1,5 @@
 # SITCON Camp 2016
-## 共同課程二
+## 共同課程三
 > Git 進階操作
 > GitHub Pages
 
